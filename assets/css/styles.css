@@ -304,8 +304,10 @@ img {
 /*==================== HOME ====================*/
 
 .home{
-  align-content: center;
-}
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
 .home__container{
   gap: 1rem;
@@ -571,61 +573,6 @@ img {
 
 .skills__open .skills__arrow{
   transform: rotate(-180deg);
-}
-
-
-
-/*==================== QUALIFICATION ====================*/
-
-.qualification__tabs{
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification__button{
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-}
-
-.qualification__button:hover{
-  color: var(--first-color);
-}
-
-.qualification__icon{
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
-.qualification__data{
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
-}
-
-.qualification__title{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.qualification__subtitle{
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.qualification__calendar{
-  font-size: var(--small-font-size);
-  color: var(--first-color);
-}
-
-.qualification__rounder{
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background-color: var(--first-color);
-  border-radius: 50%;
 }
 
 /*==================== SERVICES ====================*/
@@ -1083,10 +1030,6 @@ img {
     column-gap: 0;
   }
 
-  .home{
-    height: 100vh;
-  }
-
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
@@ -1169,11 +1112,7 @@ img {
   .container { max-width: 720px; }
 
 
-  .home{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
+  
 
   .about,
   .skills,
