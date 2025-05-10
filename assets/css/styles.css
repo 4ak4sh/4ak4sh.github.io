@@ -967,7 +967,7 @@ img {
 
 .scrollup{
   position: fixed;
-  right: 1rem;
+  right: 1.5rem;
   bottom: -20%;
   background-color: var(--first-color);
   padding: 0 .3rem;
