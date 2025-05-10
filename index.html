@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== ICONS ====================-->
+        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+        <!--==================== COLOR THEIF ====================-->
+
+        <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.2/dist/color-thief.min.js"></script>
+
+
+
+
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Aakash</title>
+
+	 </head>
+    <body class="dark-theme">
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Aakash</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-folder-open nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-notebooks nav__icon"></i> Skills
+                            </a>
+                        </li> -->
+                        
+                        <li class="nav__item">  
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-multiply nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <!-- Menu button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-align-justify nav__icon"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section snap-section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/aakashsubramonian/" target="_blank" class="home__social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="https://www.behance.net/aakashsubramanian" target="_blank" class="home__social-icon">
+                                <i class="bi bi-behance"></i>
+                            </a>
+
+                            <a href="https://github.com/4ak4sh" target="_blank" class="home__social-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <!-- <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#FF0066" d="M58.6,-43.8C73.2,-28.3,80.6,-4.1,74.5,14.9C68.5,33.9,49.1,47.7,27.6,58.5C6.2,69.2,-17.3,76.9,-35.4,69.6C-53.5,62.4,-66.3,40.2,-71.5,16.6C-76.6,-7,-74.1,-32,-60.9,-47.2C-47.7,-62.3,-23.9,-67.6,-0.9,-66.9C22,-66.1,43.9,-59.3,58.6,-43.8Z" transform="translate(100 100)" />
+                              </svg> -->
+                              
+                              <img src="assets/img/profile.png" alt="" class="home__blob">
+
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Aakash!</h1>
+                            <h3 class="home__subtitle">Graphic Designer</h3>
+                            <p class="home__description">Based in India, with over 2+ years of expertise in graphic design and design softwares.</p>
+                            <a href="#contact" class="button button--flex">
+                               Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            
+                            <span class="home__scroll-name">Scroll <i class="uil uil-mouse-alt home__scroll-mouse"></i> Down</span>
+                            <!-- <i class="uil uil-arrow-down"></i> -->
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+               <section class="portfolio section" id="portfolio">
+                    <h2 class="section__title">Portfolio</h2>
+                    <span class="section__subtitle">My recent work</span>
+
+            <div class="portfolio__container container">
+            <!-- Project Card 1 -->
+            <div class="portfolio__content drop-on-scroll">
+                <a href="#" class="project-link-button" target="_blank">
+                    <i class="uil uil-link"></i>
+                </a>
+                <div class="portfolio__img-container">
+                    <img src="assets/img/portfolio1.png" alt="Brand Identity Project">
+                </div>
+                <div class="portfolio__data">
+                    <div class="portfolio__techs">
+                        <span class="portfolio__tech-pill">
+                            <!-- Adobe Illustrator Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-illustrator-round.svg" type=""></object>
+                            </div>
+                            <!-- Adobe Photoshop Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-photoshop-round.svg" type=""></object>
+                            </div>
+                        </span>
+                    </div>
+                    <h3 class="portfolio__title">Brand Identity Design</h3>
+                    <p class="portfolio__description">Complete brand identity project for a local coffee shop including logo, color palette, and packaging designs.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="portfolio__content drop-on-scroll">
+                <a href="#" class="project-link-button" target="_blank">
+                    <i class="uil uil-link"></i>
+                </a>
+                <div class="portfolio__img-container">
+                    <img src="assets/img/portfolio2.jpg" alt="Social Media Campaign">
+                </div>
+                
+                <div class="portfolio__data">
+                    <div class="portfolio__techs">
+                        <span class="portfolio__tech-pill">
+                            <!-- Adobe Illustrator Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-illustrator-round.svg" type=""></object>
+                            </div>
+                            <!-- Adobe Photoshop Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-photoshop-round.svg" type=""></object>
+                            </div>
+                        </span>
+                    </div>
+                    <h3 class="portfolio__title">Social Media Campaign</h3>
+                    <p class="portfolio__description">Series of promotional graphics and animations for a fashion brand's seasonal campaign.</p>
+                    
+                </div>
+            </div>
+
+
+            <!-- Project Card 2 -->
+            <div class="portfolio__content drop-on-scroll">
+                <a href="#" class="project-link-button" target="_blank">
+                    <i class="uil uil-link"></i>
+                </a>
+                <div class="portfolio__img-container">
+                    <img src="assets/img/portfolio2.jpg" alt="Social Media Campaign">
+                </div>
+                <div class="portfolio__data">
+
+                    <div class="portfolio__techs">
+                        <span class="portfolio__tech-pill">
+                            <!-- Adobe Illustrator Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-illustrator-round.svg" type=""></object>
+                            </div>
+                            <!-- Adobe Photoshop Icon -->
+                            <div class="tech-icon">
+                                <object data="assets/img/logo-photoshop-round.svg" type=""></object>
+                            </div>
+                        </span>
+                        <span class="portfolio__tech-pill pill__text">
+                            <p>Brand Identity</p>
+                        </span>
+                    </div>
+                    <h3 class="portfolio__title">Social Media Campaign</h3>
+                    <p class="portfolio__description">Series of promotional graphics and animations for a fashion brand's seasonal campaign.</p>
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+        </section>
+
+        <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="services__container container grid">
+                    <!-- Services 1 -->
+                     <div class="services__content drop-on-scroll">
+                        <div>
+                            <span class="material-symbols-outlined services__icon">
+                                design_services
+                                </span>
+                           <h3 class="services__title">Logo & <br> Branding</h3>
+                           <span class="button button--flex button--small button--link services__button">
+                            View more
+                            <i class="uil uil-arrow-right button__icon"></i>
+                           </span>
+
+                           <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Logo and Branding</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I design logos that really match your brand’s vibe.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I put together all the little details — colors, fonts, icons — to keep things consistent.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I also help with packaging design that fits right in with your brand style.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <!-- Services 2 -->
+                     <div class="services__content drop-on-scroll">
+                        <div>
+
+                            <span class="material-symbols-outlined services__icon">
+                                tonality
+                                </span>
+
+                            <h3 class="services__title">Photo <br> Editing</h3>
+                           <span class="button button--flex button--small button--link services__button">
+                            View more
+                            <i class="uil uil-arrow-right button__icon"></i>
+                           </span>
+
+                           <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Photo Editing</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I professionally retouch and enhance photos to bring out their best.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I use color grading to match the mood and style you’re going for.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I handle background cleanup, object removal, and basic restoration too.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <!-- Services 3 -->
+                     <div class="services__content drop-on-scroll">
+                        <div>
+                            <span class="material-symbols-outlined services__icon">map</span>
+                           <h3 class="services__title">Print <br> Media</h3>
+                           <span class="button button--flex button--small button--link services__button">
+                            View more
+                            <i class="uil uil-arrow-right button__icon"></i>
+                           </span>
+
+                           <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Print Media Design</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I design brochures, flyers, posters, and more that catch attention and communicate clearly.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create business cards, letterheads, and other stationery that stay true to your brand.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I make sure everything is print-ready and high-quality.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <!-- Services 4 -->
+                     <div class="services__content drop-on-scroll">
+                        <div>
+                            <span class="material-symbols-outlined services__icon">
+                                movie_edit
+                                </span>
+                           <h3 class="services__title">Short <br> Video</h3>
+                           <span class="button button--flex button--small button--link services__button">
+                            View more
+                            <i class="uil uil-arrow-right button__icon"></i>
+                           </span>
+
+                           <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Short Video Editing</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I edit short videos for reels, promos, and social media — smooth and engaging.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I add clean transitions, captions, music, and visual effects.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I format the videos to look great on all major platforms.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     
+                </div>
+            </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">Got an Idea Brewing?</h2>
+                            <p class="project__description">Big or small, every idea deserves to be seen. Let’s bring your ideas to life with clean, impactful design. </p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">More about myself</span>
+                <div class="about__container container grid">
+                    <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I'm a Graphic Designer and Digital Creator based in India, with over 2+ years of expertise in graphic design and design softwares. With love for both art and technology, I've built my passion around graphic design, specializing in brand & logo design, print media design, photo editing and video editing.
+                            <br>
+                            My design style is all about simplicity and elegance. I believe that less is more and that the best designs are those that communicate clearly and effectively. I focus on designing clean, modern visuals that are both aesthetically pleasing and straightforward.
+                            <br>
+                            I'm always open to new projects and collaborations, feel free to reach out.
+                        </p>
+
+                        <!-- <div class="about__info">
+                            <div>
+                                <span class="about__info-title">03+</span>
+                                <span class="about__info-name">Years of <br> Experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Projects <br> Completed</span>
+                            </div>
+                        </div> -->
+                        
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/resume.pdf" class="button button--flex">
+                                Download Resume<i class="uil uil-import button__icon"></i>  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <!-- <section class="skills section" id="skills">
+                <h2 class="section__title">Expertise</h2>
+                <span class="section__subtitle">My Tech Skills</span>
+
+                <div class="skills__container container grid">
+                    <div>
+
+                        
+
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-illustration skills__icon"></i>    
+                                <div>
+                                    <h1 class="skills__title">Graphic Design</h1>
+                                    <span class="skills__subtitle">Vector, Illustrations & More</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Illustrator</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ai"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Inkscape</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__is"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Canva</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__canva"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__figma"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-image-edit skills__icon"></i>    
+                                <div>
+                                    <h1 class="skills__title">Photo Editing</h1>
+                                    <span class="skills__subtitle">Retoching, Color Grading & Manipulation</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Photoshop</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ps"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Lightroom</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__lr"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-film skills__icon"></i>    
+                                <div>
+                                    <h1 class="skills__title">Video Editing</h1>
+                                    <span class="skills__subtitle">Color Grading & Motion Graphics</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Capcut</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cc"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe After Effects</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ae"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Premiere Pro</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pr"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section> -->
+
+            
+
+            
+
+            
+
+            <!--==================== TESTIMONIAL ====================-->
+            <!-- <section class="testimonial section">
+                
+            </section> -->
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+
+                        <div class="contact__information">
+                            <span class="material-symbols-outlined contact__icon">call</span>
+                            <div>
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">+91 93847 30138</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <span class="material-symbols-outlined contact__icon">mail</span>
+                            <div>
+                                <h3 class="contact__title">E-Mail</h3>
+                                <span class="contact__subtitle">aakashsubramanian25 <br> @gmail.com</span>
+                            </div>  
+                        </div>
+
+                        <div class="contact__information">
+                            <span class="material-symbols-outlined contact__icon">location_on</span>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Chennai, India</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__lable">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__lable">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__lable">Message</label>
+                                <textarea name="" id="" cols="0" rows="" class="contact__input contact__message-box"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="button button--flex contact__send-button">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Aakash</h1>
+                        <span class="footer__subtitle">Graphic Designer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/4ak4sh" target="_blank" class="footer__social">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919384730138?text=Hello%20there!" target="_blank" class="footer__social">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://discord.gg/zNMerR7wMd" target="_blank" class="footer__social">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Aakash. All rights reserved </p>
+            </div>    
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+
+
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    </body>
+</html>
