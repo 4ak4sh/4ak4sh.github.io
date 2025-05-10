@@ -303,12 +303,6 @@ img {
 
 /*==================== HOME ====================*/
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
 
 .home__container{
   gap: 1rem;
@@ -1031,6 +1025,7 @@ img {
     column-gap: 0;
   }
 
+
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
@@ -1113,7 +1108,11 @@ img {
   .container { max-width: 720px; }
 
 
-  
+  .home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
   .about,
   .skills,
