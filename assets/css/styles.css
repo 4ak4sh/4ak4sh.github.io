@@ -1172,6 +1172,7 @@ img {
   .home{
     display: flex;
     justify-content: center;
+    height: 100vh;
   }
 
   .about,
@@ -1331,7 +1332,7 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 1024px) {
-
+  
 
   .container{
     max-width: 1000px;
