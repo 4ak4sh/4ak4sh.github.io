@@ -1124,7 +1124,7 @@ img {
 }
 
 
-@media screen and (min-width: 350px) and (max-width: 450px) {
+/* @media screen and (min-width: 350px) and (max-width: 450px) {
 
   .home{
     align-content: center;
@@ -1135,7 +1135,7 @@ img {
     display: flex;
   }
 
-}
+} */
 
 /* For medium devices */
 
