@@ -1050,7 +1050,7 @@ img {
   
 }
 
-
+/*
 @media screen and (min-width: 350px) and (max-width: 425px) {
 
   .home{
@@ -1066,6 +1066,7 @@ img {
     padding-top: 0;
   }
 }
+*/
 
 /* For medium devices */
 
