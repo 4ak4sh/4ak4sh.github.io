@@ -304,6 +304,7 @@ img {
 /*==================== HOME ====================*/
 
 
+
 .home__container{
   gap: 1rem;
 }
@@ -333,10 +334,6 @@ img {
 .home__blob{
     width: 200px;
 }
-
-/* .home__img{
-  width: 100%;
-} */
 
 .home__data{
   grid-column: 1/3;
@@ -1054,18 +1051,18 @@ img {
 }
 
 
-/* @media screen and (min-width: 350px) and (max-width: 450px) {
+@media screen and (min-width: 350px) and (max-width: 425px) {
 
   .home{
+    height: 100vh;
     align-content: center;
-    text-align: center;
+    padding: 4rem 0 4rem;
   }
 
-  .home__img{
-    display: flex;
+  .home__content{
+    padding: 0;
   }
-
-} */
+}
 
 /* For medium devices */
 
