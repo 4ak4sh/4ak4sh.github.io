@@ -809,6 +809,7 @@ img {
 
 .project{
   text-align: center;
+  /* padding-top: 0; */
 }
 
 .project__bg{
@@ -1233,6 +1234,7 @@ img {
   .footer__links{
     flex-direction: row;
     column-gap: 2rem;
+    justify-content: center;
   }
 
   .footer__socials{
@@ -1284,6 +1286,9 @@ img {
     justify-content: center;
   } */
 
+  .portfolio{
+    padding-top: 0;
+  }
 
 }
 
