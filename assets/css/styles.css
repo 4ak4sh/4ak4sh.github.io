@@ -271,7 +271,7 @@ img {
 .nav__close{
   position: absolute;
   right: 1.3rem;
-  bottom: .5rem;
+  bottom: .7rem;
   cursor: pointer;
   color: var(--first-color);
 }
@@ -582,7 +582,7 @@ img {
   background-color: var(--container-color);
   padding: 3.5rem .5rem 1.25rem 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .15);
+  box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, .15);
   transition: .3s;
 }
 
@@ -683,7 +683,7 @@ img {
 .portfolio__content {
     background-color: var(--container-color);
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .15);
+    box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, .15);
     overflow: hidden;
     position: relative;
     transition: all 0.3s;
@@ -1098,13 +1098,6 @@ img {
 
   .container { max-width: 720px; }
 
-
-  .home{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-
   .about,
   .skills,
   .services,
@@ -1181,12 +1174,6 @@ img {
     width: 270px;
   }
 
-  
-  .home__scroll{
-    display: flex;
-    justify-content: center;
-  }
-
 
   .about__container,
   .contact__container,
@@ -1202,7 +1189,7 @@ img {
   }
 
   .services__container{
-    grid-template-columns: repeat(4, 170px);
+    grid-template-columns: repeat(4, 180px);
     justify-content: center;
   }
 
@@ -1266,6 +1253,12 @@ img {
     max-width: 1000px;
   }
 
+  .home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
   .nav{
     max-width: 1200px;
   }
@@ -1279,6 +1272,13 @@ img {
   .home__blob{
     width: 350px;
   }
+
+  .home__scroll{
+    display: flex;
+    justify-content: center;
+  }
+
+
 }
 
 @media (min-width: 1400px) {
