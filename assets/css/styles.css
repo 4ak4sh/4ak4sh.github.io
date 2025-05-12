@@ -90,12 +90,12 @@
 body.dark-theme{
   --first-color-second: #e73651;
   --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 0%, 80%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: #1f1f1f;
   --container-color: #222222;
-  /* --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%); */
+  --scroll-bar-color: #222222;
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -658,7 +658,7 @@ img {
 
 .services__modal-icon{
   color: var(--first-color);
-  margin-right: var(--mb-0-5);
+  margin-right: var(--mb-0-75);
 }
 
 /* Active Modal */
