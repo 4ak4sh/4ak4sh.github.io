@@ -1061,6 +1061,10 @@ img {
   .home__content{
     padding: 0;
   }
+
+  .portfolio{
+    padding-top: 0;
+  }
 }
 
 /* For medium devices */
