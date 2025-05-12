@@ -1257,6 +1257,11 @@ img {
     display: flex;
     justify-content: center;
     height: 100vh;
+    padding: 0%;
+  }
+
+  .home__content{
+    padding: 4rem 4rem 4rem 4rem;
   }
 
   .nav{
@@ -1273,10 +1278,10 @@ img {
     width: 350px;
   }
 
-  .home__scroll{
+  /* .home__scroll{
     display: flex;
     justify-content: center;
-  }
+  } */
 
 
 }
