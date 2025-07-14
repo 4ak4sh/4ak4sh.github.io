@@ -181,6 +181,14 @@ img {
   text-align: center;
 }
 
+/* ====================== OUTLINE ====================== */
+
+/* Remove focus outline on mouse/touch but keep it for keyboard users */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 100%;
