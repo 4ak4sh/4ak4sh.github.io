@@ -183,6 +183,10 @@ img {
 
 /* ====================== OUTLINE ====================== */
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* Remove focus outline on mouse/touch but keep it for keyboard users */
 :focus:not(:focus-visible) {
     outline: none;
