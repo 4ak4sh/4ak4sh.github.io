@@ -699,28 +699,35 @@
 
                     </div>
 
-                    <form action="" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__lable">Name</label>
-                                <input type="text" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__lable">Email</label>
-                                <input type="email" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__lable">Message</label>
-                                <textarea name="" id="" cols="0" rows="" class="contact__input contact__message-box"></textarea>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="" class="button button--flex contact__send-button">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </form>
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+
+    <input type="hidden" name="access_key" value="37f27903-2a8c-4a15-bd12-c7025494b4d6">
+
+    <div class="contact__inputs grid">
+        <div class="contact__content">
+            <label for="" class="contact__lable">Name</label>
+            <input type="text" class="contact__input" name="name" required>
+        </div>
+        <div class="contact__content">
+            <label for="" class="contact__lable">Email</label>
+            <input type="email" class="contact__input" name="email" required>
+        </div>
+        <div class="contact__content">
+            <label for="" class="contact__lable">Message</label>
+            <textarea name="message" class="contact__input contact__message-box" required></textarea>
+        </div>
+    </div>
+
+    <!-- Hidden submit button for validation to work -->
+    <button type="submit" id="hiddenSubmit" style="display: none;"></button>
+
+    <div>
+        <a href="#" class="button button--flex contact__send-button" id="submitForm" role="button" tabindex="0">
+            Send Message
+            <i class="uil uil-message button__icon"></i>
+        </a>
+    </div>
+    </form>
 
                 </div>
             </section>

@@ -205,5 +205,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // FORM
+
+    const submitLink = document.getElementById('submitForm');
+    const hiddenSubmit = document.getElementById('hiddenSubmit');
+    const form = document.getElementById('contactForm');
+
+    submitLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        hiddenSubmit.click();
+    });
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                submitLink.innerHTML = 'Message Sent <i class="uil uil-check-circle button__icon"></i>';
+                submitLink.style.pointerEvents = 'none';
+                submitLink.style.opacity = '0.6';
+            } else {
+                alert('Something went wrong. Please try again.');
+            }
+        })
+        .catch(error => {
+            alert('Something went wrong. Please try again.');
+        });
+    });
+
+
+    
+
+    
 
     
