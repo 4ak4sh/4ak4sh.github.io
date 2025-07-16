@@ -401,18 +401,20 @@ img {
   padding: 1rem;
   border-radius: .75rem;
   font-weight: var(--font-medium);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  will-change: transform, box-shadow;
 }
 
-.button:hover{
-  /* background-color: var(--first-color-alt); */
+/* .button:hover{
+
   box-shadow: rgba(255, 55, 98, 0.2) 0px 12px 28px 0px, rgba(255, 96, 120, 0.1) 0px 2px 4px 0px, rgba(255, 19, 54, 0.05) 0px 0px 0px 1px inset;
   transition: .3s;
-}
+} */
 
 .button__icon{
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transition: .3s;
+  transition: .3s ease;
 }
 
 .button--white{
@@ -441,8 +443,28 @@ img {
   box-shadow: none;
 }
 
-.button:hover .icon__transform{
-  transform: translateX(.20rem) translateY(-.20rem);
+@media (min-width: 768px) {
+    .button:hover {
+        box-shadow: rgba(255, 55, 98, 0.2) 0px 12px 28px 0px,
+                    rgba(255, 96, 120, 0.1) 0px 2px 4px 0px,
+                    rgba(255, 19, 54, 0.05) 0px 0px 0px 1px inset;
+    }
+
+    .button:hover .icon__transform {
+        transform: translateX(4px) translateY(-4px);
+    }
+}
+
+@media (max-width: 767px) {
+    .button:active {
+        box-shadow: rgba(255, 55, 98, 0.2) 0px 12px 28px 0px,
+                    rgba(255, 96, 120, 0.1) 0px 2px 4px 0px,
+                    rgba(255, 19, 54, 0.05) 0px 0px 0px 1px inset;
+    }
+
+    .button:active .icon__transform {
+        transform: translateX(4px) translateY(-4px);
+    }
 }
 
 /*==================== ABOUT ====================*/
@@ -625,6 +647,9 @@ img {
 .services__button:hover .button__icon{
   transform: translateX(.25rem);
 }
+
+.services__button:hover{
+  box-shadow: none;}
 
 .services__modal{
   position: fixed;
