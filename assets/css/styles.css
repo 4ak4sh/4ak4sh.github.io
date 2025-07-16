@@ -441,6 +441,9 @@ img {
   box-shadow: none;
 }
 
+.button:hover .icon__transform{
+  transform: translateX(.20rem) translateY(-.20rem);
+}
 
 /*==================== ABOUT ====================*/
 
