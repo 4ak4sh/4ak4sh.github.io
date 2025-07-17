@@ -1161,6 +1161,7 @@ img {
         height: calc(100vh - var(--header-height));
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .home__content {
