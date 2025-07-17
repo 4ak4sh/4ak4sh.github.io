@@ -1155,18 +1155,41 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .home {
+
+  /* .home {
         padding-top: 0px;
         padding-bottom: 0px;
-        min-height: calc(100dvh - var(--header-height));
+        min-height: calc(100vh - var(--header-height));
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
+  
+  html {
+    scroll-behavior: smooth;
+    overscroll-behavior-y: contain;
+  }
 
-    .home__content {
-        padding-top: 0px;
-    }
+  body {
+      overflow-x: hidden;
+  }
+
+  .home {
+      height: calc(100dvh - var(--header-height));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: height 0.3s ease; /* smooth visual update if dvh changes */
+  }
+
+  .main {
+      overscroll-behavior-y: contain;
+  }
+
+  .home__content {
+      padding-top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {

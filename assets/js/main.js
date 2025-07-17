@@ -241,9 +241,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-    
-
     
 
     
