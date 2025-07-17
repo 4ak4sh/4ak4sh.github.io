@@ -453,6 +453,14 @@ img {
     .button:hover .icon__transform {
         transform: translateX(4px) translateY(-4px);
     }
+
+    .button:hover .icon__transform_right {
+        transform: translateX(4px);
+    }
+
+    .button:hover .icon__transform_scale {
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 767px) {
@@ -464,6 +472,14 @@ img {
 
     .button:active .icon__transform {
         transform: translateX(4px) translateY(-4px);
+    }
+
+    .button:active .icon__transform_right {
+        transform: translateX(4px);
+    }
+
+    .button:active .icon__transform_scale {
+        transform: scale(1.2);
     }
 }
 
@@ -1136,6 +1152,14 @@ img {
   }
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: calc(100vh - var(--header-height));
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
