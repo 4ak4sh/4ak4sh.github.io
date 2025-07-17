@@ -1156,9 +1156,15 @@ img {
 
 @media screen and (max-width: 768px) {
     .home {
+        padding-top: 0px;
+        padding-bottom: 0px;
         height: calc(100vh - var(--header-height));
         display: flex;
         align-items: center;
+    }
+
+    .home__content {
+        padding-top: 0px;
     }
 }
 
