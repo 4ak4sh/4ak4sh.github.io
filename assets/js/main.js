@@ -269,7 +269,7 @@ form.addEventListener('submit', function (event) {
     });
 });
 
-// Animations
+// Animations - not currently used
 
 const reveals = document.querySelectorAll('.reveal');
 
