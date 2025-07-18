@@ -34,6 +34,19 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// Close nav menu when clicking outside
+document.addEventListener('click', function(event) {
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickToggle = navToggle.contains(event.target);
+
+    // If click is outside both navMenu and navToggle, close menu
+    if (!isClickInsideMenu && !isClickToggle) {
+        navMenu.classList.remove('show-menu');
+    }
+});
+
 /*==================== ACCORDION SKILLS ====================*/
 
 const skillsContent = document.getElementsByClassName('skills__content'),
@@ -81,6 +94,21 @@ modalCloses.forEach((modalCloses)=>{
         })
     })
 })
+
+// Close services modal when clicking outside the modal content
+
+document.addEventListener('click', function(event) {
+    const modals = document.querySelectorAll('.services__modal');
+    
+    modals.forEach(modal => {
+        const isClickInsideModal = modal.querySelector('.services__modal-content').contains(event.target);
+        const isActive = modal.classList.contains('active-modal');
+
+        if (!isClickInsideModal && isActive && !event.target.classList.contains('services__button')) {
+            modal.classList.remove('active-modal');
+        }
+    });
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 

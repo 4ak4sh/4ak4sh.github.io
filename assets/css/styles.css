@@ -254,7 +254,7 @@ img {
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 1px 4px rgba(0,0,0,.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: .35;
+    transition: bottom 0.3s ease-in-out;
   }
 }
 
@@ -1190,10 +1190,6 @@ img {
   .home__content {
       padding-top: 0px;
   }
-
-  /* .home__data{
-    text-align: center;
-  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -1275,8 +1271,6 @@ img {
   .home__blob{
     width: 270px;
   }
-
-  
 
 
   .about__container,
@@ -1389,7 +1383,7 @@ img {
   } */
 
   .portfolio{
-    padding-top: 2.5rem;
+    padding-top: 0;
   }
 
 }
@@ -1434,24 +1428,25 @@ img {
 
 .reveal {
     opacity: 0;
-    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition: 0.6s ease;
 }
 
-/* Initial Positions */
 .reveal-left {
     transform: translateX(-50px);
 }
+
 .reveal-right {
     transform: translateX(50px);
 }
+
 .reveal-top {
     transform: translateY(-50px);
 }
+
 .reveal-bottom {
     transform: translateY(50px);
 }
 
-/* Active State */
 .reveal.active {
     opacity: 1;
     transform: translateX(0) translateY(0);
