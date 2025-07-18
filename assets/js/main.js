@@ -180,67 +180,79 @@ themeButton.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
         // Set up the Intersection Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                // If the element is in view
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                } else {
-                    // When element leaves the viewport, remove the active class
-                    entry.target.classList.remove('active');
-                }
-            });
-        }, {
-            // Configure the observer:
-            // - root: null (use the viewport)
-            // - threshold: 0.15 (trigger when 15% of the element is visible)
-            // - rootMargin: "0px" (no margin around the viewport)
-            threshold: 0.50
-        });
-
-        // Get all elements with the pop-on-scroll class and observe them
-        const animatedElements = document.querySelectorAll('.drop-on-scroll');
-        animatedElements.forEach(element => {
-            observer.observe(element);
-        });
-    });
-
-    // FORM
-
-    const submitLink = document.getElementById('submitForm');
-    const hiddenSubmit = document.getElementById('hiddenSubmit');
-    const form = document.getElementById('contactForm');
-
-    submitLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        hiddenSubmit.click();
-    });
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        })
-        .then(response => {
-            if (response.ok) {
-                form.reset();
-                submitLink.innerHTML = 'Message Sent <i class="uil uil-check-circle button__icon"></i>';
-                submitLink.style.pointerEvents = 'none';
-                submitLink.style.opacity = '0.6';
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // If the element is in view
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
             } else {
-                alert('Something went wrong. Please try again.');
+                // When element leaves the viewport, remove the active class
+                entry.target.classList.remove('active');
             }
-        })
-        .catch(error => {
-            alert('Something went wrong. Please try again.');
         });
+    }, {
+        // Configure the observer:
+        // - root: null (use the viewport)
+        // - threshold: 0.15 (trigger when 15% of the element is visible)
+        // - rootMargin: "0px" (no margin around the viewport)
+        threshold: 0.50
     });
 
-    
+    // Get all elements with the pop-on-scroll class and observe them
+    const animatedElements = document.querySelectorAll('.drop-on-scroll');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
 
-    
+// FORM
+
+const submitLink = document.getElementById('submitForm');
+const hiddenSubmit = document.getElementById('hiddenSubmit');
+const form = document.getElementById('contactForm');
+
+submitLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    hiddenSubmit.click();
+});
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            form.reset();
+            submitLink.innerHTML = 'Message Sent <i class="uil uil-check-circle button__icon"></i>';
+            submitLink.style.pointerEvents = 'none';
+            submitLink.style.opacity = '0.6';
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    })
+    .catch(error => {
+        alert('Something went wrong. Please try again.');
+    });
+});
+
+// Animations
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active'); // Reverse effect
+        }
+    });
+}, { threshold: 0.2 }); // Adjust sensitivity if needed
+
+reveals.forEach(reveal => observer.observe(reveal));
