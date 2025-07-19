@@ -661,6 +661,10 @@ img {
   font-size: var(--small-font-size);
 }
 
+.services__button * {
+    pointer-events: none;
+}
+
 .services__button:hover .button__icon{
   transform: translateX(.25rem);
 }
