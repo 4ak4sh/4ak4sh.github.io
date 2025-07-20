@@ -314,6 +314,68 @@ img {
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
+
+/*==================== LOADING SCREEN ====================*/
+
+/*==================== LOADING SCREEN ====================*/
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 4000; /* Ensure it overlays everything */
+  height: 100vh;
+  font-family: var(--body-font);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  gap: 0.5rem;
+  transition: opacity 0.5s ease;
+}
+
+#loader .words {
+  overflow: hidden;
+  position: relative;
+  height: 1.5em;
+}
+
+#loader .words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--body-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--body-color) 90%
+  );
+  z-index: 1;
+}
+
+#loader .word {
+  display: block;
+  height: 100%;
+  padding-left: 0.5rem;
+  color: var(--first-color);
+  animation: spinText 4s infinite;
+}
+
+@keyframes spinText {
+  10%  { transform: translateY(-102%); }
+  25%  { transform: translateY(-100%); }
+  35%  { transform: translateY(-202%); }
+  50%  { transform: translateY(-200%); }
+  60%  { transform: translateY(-302%); }
+  75%  { transform: translateY(-300%); }
+  85%  { transform: translateY(-402%); }
+  100% { transform: translateY(-400%); }
+}
+
+
 /*==================== HOME ====================*/
 
 

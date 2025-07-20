@@ -284,3 +284,23 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 }); // Adjust sensitivity if needed
 
 reveals.forEach(reveal => observer.observe(reveal));
+
+
+// Loading Progress Bar
+// Hides loader once the page is fully loaded
+//==================== HIDE LOADER ON FULL LOAD ====================//
+//==================== DELAYED LOADER HIDE ====================//
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  if (loader) {
+    // Keep loader visible for 5 seconds after page load
+    setTimeout(() => {
+      loader.style.opacity = '0';
+      loader.style.pointerEvents = 'none';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500); // Matches fade-out transition
+    }, 3000); // Delay in milliseconds (5 seconds)
+  }
+});
+
