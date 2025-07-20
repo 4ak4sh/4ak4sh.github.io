@@ -292,7 +292,7 @@ reveals.forEach(reveal => observer.observe(reveal));
 
 // LOADING SCREEN
 
-const MIN_DISPLAY_TIME = 2000; // total loader time (e.g., 4 sec)
+const MIN_DISPLAY_TIME = 1000; // total loader time (e.g., 4 sec)
 const SCROLLBAR_APPEAR_BEFORE = 500; // show scrollbar 2 sec before loader hides
 
 const startTime = Date.now();
