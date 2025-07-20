@@ -1511,3 +1511,63 @@ img {
 .nav__menu {
     z-index: 2000;
 }
+
+
+
+
+/* SCROLL SNAP */
+
+@media screen and (max-width: 768px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .home {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overscroll-behavior-y: contain;
+  }
+
+  /* Make portfolio section sticky at the top */
+  .portfolio {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    padding-top: var(--header-height);
+    position: relative;
+    overscroll-behavior-y: contain;
+  }
+
+  /* Ensure services section also snaps after portfolio */
+  .services {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  /* Continue normal snapping for remaining sections */
+  .project,
+  .about,
+  .contact,
+  .footer {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
+  .main {
+    overscroll-behavior-y: auto;
+  }
+
+  .home__content {
+    padding-top: 0px;
+  }
+}
