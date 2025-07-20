@@ -314,6 +314,57 @@ img {
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
+
+/* Loading Screen */
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--body-color, #222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.5s;
+}
+
+.loader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #e73651; /* Use a brand color or #fff */
+  animation: l4 2.5s infinite;
+}
+
+.loader:after {
+  animation-delay: -1.25s;
+}
+
+@keyframes l4 {
+  0% { inset: 0 35px 35px 0; }
+  12.5% { inset: 0 35px 0 0; }
+  25% { inset: 35px 35px 0 0; }
+  37.5% { inset: 35px 0 0 0; }
+  50% { inset: 35px 0 0 35px; }
+  62.5% { inset: 0 0 0 35px; }
+  75% { inset: 0 0 35px 35px; }
+  87.5% { inset: 0 0 35px 0; }
+  100% { inset: 0 35px 35px 0; }
+}
+
+
+.no-scroll {
+  overflow: hidden;
+  height: 100dvh;
+}
+
 /*==================== HOME ====================*/
 
 

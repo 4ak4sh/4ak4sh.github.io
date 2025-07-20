@@ -284,3 +284,33 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 }); // Adjust sensitivity if needed
 
 reveals.forEach(reveal => observer.observe(reveal));
+
+
+
+
+
+
+// LOADING SCREEN
+
+const MIN_DISPLAY_TIME = 2000; // 2 seconds
+const startTime = Date.now();
+const loader = document.getElementById('loading-screen');
+
+// Disable scroll during loading
+document.body.classList.add('no-scroll');
+
+window.addEventListener('load', function () {
+  const timeElapsed = Date.now() - startTime;
+  const remainingTime = Math.max(0, MIN_DISPLAY_TIME - timeElapsed);
+
+  setTimeout(() => {
+    loader.style.opacity = '0';
+    loader.style.transition = 'opacity 0.5s ease';
+
+    setTimeout(() => {
+      loader.style.display = 'none';
+      // Re-enable scroll after hiding loader
+      document.body.classList.remove('no-scroll');
+    }, 500); // fade-out duration
+  }, remainingTime);
+});
