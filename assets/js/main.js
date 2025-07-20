@@ -292,25 +292,29 @@ reveals.forEach(reveal => observer.observe(reveal));
 
 // LOADING SCREEN
 
-const MIN_DISPLAY_TIME = 2000; // 2 seconds
+const MIN_DISPLAY_TIME = 2000; // total loader time (e.g., 4 sec)
+const SCROLLBAR_APPEAR_BEFORE = 100; // show scrollbar 2 sec before loader hides
+
 const startTime = Date.now();
 const loader = document.getElementById('loading-screen');
-
-// Disable scroll during loading
 document.body.classList.add('no-scroll');
 
 window.addEventListener('load', function () {
   const timeElapsed = Date.now() - startTime;
   const remainingTime = Math.max(0, MIN_DISPLAY_TIME - timeElapsed);
 
+  // 1. Remove 'no-scroll' to show scrollbar BEFORE loader fades out:
   setTimeout(() => {
-    loader.style.opacity = '0';
-    loader.style.transition = 'opacity 0.5s ease';
+    document.body.classList.remove('no-scroll'); // Scrollbar appears here
 
+    // 2. After another interval, fade out the loader:
     setTimeout(() => {
-      loader.style.display = 'none';
-      // Re-enable scroll after hiding loader
-      document.body.classList.remove('no-scroll');
-    }, 500); // fade-out duration
-  }, remainingTime);
+      loader.style.opacity = '0';
+      loader.style.transition = 'opacity 0.5s ease';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500); // match CSS transition
+    }, SCROLLBAR_APPEAR_BEFORE);
+
+  }, remainingTime - SCROLLBAR_APPEAR_BEFORE);
 });
