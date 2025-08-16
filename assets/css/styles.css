@@ -366,7 +366,10 @@ img {
 
 /*==================== HOME ====================*/
 
-
+.home {
+  display: flex;
+  justify-content: center;
+}
 
 .home__container{
   gap: 1rem;
@@ -1410,9 +1413,9 @@ img {
     padding: 4rem 4rem 4rem 4rem;
   }
 
-  .nav{
+  /* .nav{
     max-width: 1200px;
-  }
+  } */
 
   .header,
   .main,
