@@ -204,6 +204,31 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
+// Nav logo
+
+const themebutton = document.getElementById('theme-button');
+const logoImg = document.getElementById('nav-logo-img');
+themebutton.addEventListener('click', () => {
+  if(document.body.classList.contains('dark-theme')) {
+    logoImg.src = '/assets/img/nav-logo-dark.svg';
+  } else {
+    logoImg.src = '/assets/img/nav-logo-light.svg';
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const logoImg = document.getElementById('nav-logo-img');
+  if (!logoImg) return;
+  const savedTheme = localStorage.getItem('selected-theme');
+  const appliedTheme = savedTheme
+    ? savedTheme
+    : (document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+  logoImg.src = appliedTheme === 'dark'
+    ? '/assets/img/nav-logo-dark.svg'
+    : '/assets/img/nav-logo-light.svg';
+});
+
+
 // CONTAINER ANIMATION
 
 document.addEventListener('DOMContentLoaded', function() {

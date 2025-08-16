@@ -223,7 +223,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: ease-in-out 0.3s;
+}
 
+.nav__logo img {
+  width: 4rem;
+  height: auto;
+  display: block;
 }
 
 .nav__logo,
@@ -366,7 +372,10 @@ img {
 
 /*==================== HOME ====================*/
 
-
+.home {
+  display: flex;
+  justify-content: center;
+}
 
 .home__container{
   gap: 1rem;
@@ -1410,9 +1419,9 @@ img {
     padding: 4rem 4rem 4rem 4rem;
   }
 
-  .nav{
+  /* .nav{
     max-width: 1200px;
-  }
+  } */
 
   .header,
   .main,
